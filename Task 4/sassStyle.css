@@ -1,0 +1,53 @@
+body main .wrapper .container h1 {
+  margin-bottom: 20px;
+}
+
+body main .wrapper .container #output {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+}
+
+body main .wrapper .container #output div {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #24af15;
+  width: 100%;
+}
+
+body main .wrapper .container #output div h4 {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+body main .wrapper .container #output div h4:hover {
+  background: #003f20;
+  cursor: pointer;
+}
+
+body main .wrapper .container #output div .carsList {
+  padding: 10px;
+  display: none;
+}
+
+body main .wrapper .container #output div .carsList li {
+  list-style: none;
+}
+
+body main .wrapper .container #output div h4:hover ~ .carsList {
+  display: block;
+}
+/*# sourceMappingURL=sassStyle.css.map */

@@ -1,0 +1,49 @@
+body {
+  main {
+    .wrapper {
+      .container {
+        h1 {
+          margin-bottom: 20px;
+        }
+        #output {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          width: 80%;
+
+          div {
+            justify-self: center;
+            background-color: #24af15;
+            width: 100%;
+
+            h4 {
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 1s ease;
+            }
+
+            h4:hover {
+              background: #003f20;
+              cursor: pointer;
+            }
+
+            .carsList {
+              padding: 10px;
+              display: none;
+
+              li {
+                list-style: none;
+              }
+            }
+
+            h4:hover ~ .carsList {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
