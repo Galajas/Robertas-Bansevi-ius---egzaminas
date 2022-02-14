@@ -28,6 +28,7 @@ myForm.addEventListener("submit", (event) => {
 
 function resultTemplate(kilo, convertedPounds, convertedGrams, convertedOunce) {
   const outputContainer = document.querySelector("#output");
+  outputContainer.innerHTML = "";
 
   const puondCont = document.createElement("div");
   puondCont.setAttribute("class", "resultContainer");
