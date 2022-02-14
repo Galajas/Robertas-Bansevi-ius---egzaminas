@@ -28,6 +28,9 @@ const filterDogOwers = users.filter((data) => {
 
 const filterAdults = users.filter((data) => {
   if (data.age > 18) {
-    console.log(`Is legal age: ${data.name}`);
+    // console.log(`Is legal age: ${data.name}`);
+    return data;
   }
 });
+
+console.log(filterAdults);
