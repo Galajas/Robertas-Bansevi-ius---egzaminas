@@ -5,10 +5,10 @@ body main .wrapper .container h1 {
 body main .wrapper .container #output {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
-  width: 80%;
+  width: 40%;
 }
 
 body main .wrapper .container #output div {
