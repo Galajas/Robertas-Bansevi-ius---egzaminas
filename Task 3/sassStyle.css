@@ -14,12 +14,14 @@ body main .wrapper .output-cointainer #output .resultContainer {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  background-color: rgba(107, 105, 105, 0.385);
-  border-radius: 10px;
+  background-color: #474747;
+  border-radius: 5px;
+  color: white;
 }
 
 body main .wrapper .output-cointainer #output .resultContainer div {
   padding: 10px;
+  font-size: 20px;
 }
 
 body main .wrapper .output-cointainer #output .resultContainer img {

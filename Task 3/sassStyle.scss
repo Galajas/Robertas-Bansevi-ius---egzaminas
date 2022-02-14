@@ -12,11 +12,13 @@ body {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            background-color: rgba(107, 105, 105, 0.385);
-            border-radius: 10px;
+            background-color: #474747;
+            border-radius: 5px;
+            color: white;
 
             div {
               padding: 10px;
+              font-size: 20px;
             }
 
             img {
