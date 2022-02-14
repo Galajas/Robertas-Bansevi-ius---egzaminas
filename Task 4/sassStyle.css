@@ -16,6 +16,10 @@ body main .wrapper .container #output div {
       justify-self: center;
   background-color: #24af15;
   width: 100%;
+  height: 50px;
+  overflow: hidden;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 body main .wrapper .container #output div h4 {
@@ -29,18 +33,13 @@ body main .wrapper .container #output div h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-body main .wrapper .container #output div h4:hover {
-  background: #003f20;
-  cursor: pointer;
 }
 
 body main .wrapper .container #output div .carsList {
   padding: 10px;
-  display: none;
+  height: 0px;
+  background-color: #003f20;
+  color: white;
 }
 
 body main .wrapper .container #output div .carsList li {
@@ -48,6 +47,15 @@ body main .wrapper .container #output div .carsList li {
 }
 
 body main .wrapper .container #output div h4:hover ~ .carsList {
-  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+}
+
+body main .wrapper .container #output div:hover {
+  background: #003f20;
+  cursor: pointer;
+  overflow: unset;
+  border-bottom: white 1px solid;
 }
 /*# sourceMappingURL=sassStyle.css.map */
